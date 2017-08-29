@@ -38,9 +38,6 @@ if old_num_rows < row_count:
 
     client = discord.Client()
 
-    for i in range(row_count - old_num_rows, 0, -1):
-        print('Counting Row:' + str(i-1))
-
     @client.event
     async def on_ready():
         print('client ready')
