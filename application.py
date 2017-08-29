@@ -5,10 +5,10 @@ import pickle
 import os
 
 # Settings
-path_to_pickle = r"/home/bhadmin/scripts/rowtracker.pickle"
+path_to_pickle = r"/home/scripts/pickle.pickle"
 # use creds to create a client to interact with the Google Drive API
 scope = ['https://spreadsheets.google.com/feeds']
-creds = ServiceAccountCredentials.from_json_keyfile_name(r'/home/bhadmin/scripts/GoogleAPI.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('GoogleAPI.json', scope)
 client = gspread.authorize(creds)
 # Find a workbook by name and open the first sheet
 # Make sure you use the right name here.
@@ -69,4 +69,4 @@ if old_num_rows < row_count:
         exit(0)
 
 
-    client.run("MzM5ODI1ODA2MzIwODYxMTg0.DIHYNg.KrqLRiwbFRJ-hkzQaoeo15C2AM0")
+    client.run("*******")
